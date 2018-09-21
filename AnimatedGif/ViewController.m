@@ -11,7 +11,8 @@
 
 @interface ViewController ()
 
-@property (nonatomic, weak) IBOutlet UIImageView *gifImageView;
+@property (nonatomic, weak) IBOutlet UIImageView *gifImageView1;
+@property (nonatomic, weak) IBOutlet UIImageView *gifImageView2;
 
 @end
 
@@ -19,9 +20,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSDataAsset *gifAsset = [[NSDataAsset alloc] initWithName:@"trump_gif"];
-    [[AnimatedGifManager sharedManager] initImageView:self.gifImageView withGifImageDate:gifAsset.data];
-    [self.gifImageView startAnimating];
+    NSDataAsset *gifAsset1 = [[NSDataAsset alloc] initWithName:@"trump_gif"];
+     NSDataAsset *gifAsset2 = [[NSDataAsset alloc] initWithName:@"animation"];
+    
+    [[AnimatedGifManager sharedManager] initImageView:self.gifImageView1 withGifImageDate:gifAsset1.data];
+    [self.gifImageView1 startAnimating];
+    
+    [[AnimatedGifManager sharedManager] initImageView:self.gifImageView2 withGifImageDate:gifAsset2.data];
+    [self.gifImageView2 startAnimating];
 }
 
 
