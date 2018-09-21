@@ -40,14 +40,6 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedMyManager = [[self alloc] init];
-        
-        sharedMyManager.gifBufferData = [NSMutableData data];
-        sharedMyManager.gifScreenData = [NSMutableData data];
-        sharedMyManager.gifStringData = [NSMutableData data];
-        sharedMyManager.gifGlobalData = [NSMutableData data];
-        
-        sharedMyManager.gifFramesArray = [NSMutableArray array];
-        sharedMyManager.gifTransparanciesArray = [NSMutableArray array];
     });
     return sharedMyManager;
 }
@@ -174,6 +166,14 @@
  */
 
 - (void) initImageView:(UIImageView *)imageView withGifImageDate:(NSData *)gifData {
+    self.gifBufferData = [NSMutableData data];
+    self.gifScreenData = [NSMutableData data];
+    self.gifStringData = [NSMutableData data];
+    self.gifGlobalData = [NSMutableData data];
+    
+    self.gifFramesArray = [NSMutableArray array];
+    self.gifTransparanciesArray = [NSMutableArray array];
+    
     if(gifData != nil) {
         [self decodeGIF:gifData];
         if ([self.gifFramesArray count] > 0) {
