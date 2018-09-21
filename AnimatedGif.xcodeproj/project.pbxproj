@@ -15,6 +15,7 @@
 		632E811E2154D67100B0C6FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 632E811D2154D67100B0C6FD /* main.m */; };
 		632E81282154D67100B0C6FD /* AnimatedGifTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 632E81272154D67100B0C6FD /* AnimatedGifTests.m */; };
 		632E81332154D67100B0C6FD /* AnimatedGifUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 632E81322154D67100B0C6FD /* AnimatedGifUITests.m */; };
+		632E81422154DACE00B0C6FD /* AnimatedGifManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 632E81412154DACE00B0C6FD /* AnimatedGifManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		632E812E2154D67100B0C6FD /* AnimatedGifUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimatedGifUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		632E81322154D67100B0C6FD /* AnimatedGifUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatedGifUITests.m; sourceTree = "<group>"; };
 		632E81342154D67100B0C6FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632E81402154DACE00B0C6FD /* AnimatedGifManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatedGifManager.h; sourceTree = "<group>"; };
+		632E81412154DACE00B0C6FD /* AnimatedGifManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatedGifManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				632E81192154D67100B0C6FD /* LaunchScreen.storyboard */,
 				632E811C2154D67100B0C6FD /* Info.plist */,
 				632E811D2154D67100B0C6FD /* main.m */,
+				632E81402154DACE00B0C6FD /* AnimatedGifManager.h */,
+				632E81412154DACE00B0C6FD /* AnimatedGifManager.m */,
 			);
 			path = AnimatedGif;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				632E81132154D67000B0C6FD /* ViewController.m in Sources */,
+				632E81422154DACE00B0C6FD /* AnimatedGifManager.m in Sources */,
 				632E811E2154D67100B0C6FD /* main.m in Sources */,
 				632E81102154D67000B0C6FD /* AppDelegate.m in Sources */,
 			);
@@ -436,6 +442,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DW5V8L6HM;
 				INFOPLIST_FILE = AnimatedGif/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DW5V8L6HM;
 				INFOPLIST_FILE = AnimatedGif/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

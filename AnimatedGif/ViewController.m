@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "AnimatedGifManager.h"
 
 @interface ViewController ()
+
+@property (nonatomic, weak) IBOutlet UIImageView *gifImageView;
 
 @end
 
@@ -16,7 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSDataAsset *gifAsset = [[NSDataAsset alloc] initWithName:@"trump_gif"];
+    [[AnimatedGifManager sharedManager] initImageView:self.gifImageView withGifImageDate:gifAsset.data];
+    [self.gifImageView startAnimating];
 }
 
 
